@@ -40,5 +40,5 @@ for i in range(1, number_of_configurations):
 	filedata_config = filedata
 	for key in replaceKeys:
 		filedata_config = filedata_config.replace(key, str(int(sheet.cell_value(i, dict_col_index[key]))))
-		with open('./configurations/configuration' + str(i) + '.mm', 'w') as file:
+		with open('./configurations/configuration.mm', 'w') as file:
 			file.write(filedata_config)

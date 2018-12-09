@@ -5,13 +5,13 @@
 
 # Overall issue width. This is the number of syllables that can be executed
 # per cycle, regardless of clustering. This must be at least 2.
-RES: IssueWidth     18
+RES: IssueWidth     8
 
 # The following parameters specify the number of 32-bit connections to the data
 # cache, for memory loads, stores, and prefetches respectively.
-RES: MemLoad        18
-RES: MemStore       18
-RES: MemPft         18
+RES: MemLoad        8
+RES: MemStore       1
+RES: MemPft         1
 
 # The following parameter specifies the number of clusters to use. It can be
 # 1, 2 or 4. 
@@ -29,19 +29,19 @@ RES: MemPft         18
 # The following parameter specifies the maximum number of syllables that can be
 # decoded by this cluster per cycle. This must be equal to the value of 
 # RES:IssueWidht in global configuration.
-RES: IssueWidth.0   18
+RES: IssueWidth.0   8
 
 # The following parameter specifies the number of ALU syllables that can be
 # executed by this cluster per cycle.
-RES: Alu.0          18
+RES: Alu.0          8
 
 # The following parameter specifies the number of multiply syllables that can
 # be executed by this cluster per cycle.
-RES: Mpy.0          18
+RES: Mpy.0          2
 
 # The following parameter specifies the number of memory syllables that can be
 # executed by this cluster per cycle.
-RES: Memory.0       18
+RES: Memory.0       8
 
 # The following two parameters specify the number of inter-cluster
 # communication syllables that can be executed by this cluster per cycle. A
@@ -55,11 +55,11 @@ RES: CopyDst.0      0
 
 # The following parameter specifies the number of 32-bit general purpose
 # registers available to this cluster.
-REG: $r0            18
+REG: $r0            32
 
 # The following parameter specifies the number of single bit condition
 # registers available to this cluster.
-REG: $b0            18
+REG: $b0            8
 
 #=============================================================================#
 #            For the assignments, don't change anything below here            #

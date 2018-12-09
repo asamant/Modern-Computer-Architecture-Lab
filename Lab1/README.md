@@ -1,6 +1,7 @@
 # README FOR THE MCA LAB1 FILES
 
 This lab deals with performing simulations for various processor architecture configurations (pVEX). The simulations are performed on a Linux (openSUSE) VM.
+The files below need to be present in the same directory as the .c files used for simulations.
 
 ## SOFTWARE REQUIRED
 * python

@@ -5,7 +5,7 @@ import re
 import xlsxwriter
 
 #REGEX FOR MATCHING THE EXPRESSION FOR SLICE REGISTER COUNT; check group 3
-slice_registers_regex = re.compile('(\s+)Number of Slice Registers:(\s+)((\d|,)*)(\s+)out of')
+slice_registers_regex = re.compile('(\s+)Number of occupied Slices:(\s+)((\d|,)*)(\s+)out of')
 
 #REGEX FOR MATCHING THE EXPRESSION FOR SLICE LUT COUNT; check group 3
 slice_LUTs_regex = re.compile('(\s+)Number of Slice LUTs:(\s+)((\d|,)*)(\s+)out of')                     
